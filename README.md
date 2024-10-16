@@ -1,56 +1,50 @@
-# Learning management system using django web framework
+# Systeme de gestion de l'apprentissage basé python et son framework célèbre django
 
-## Hosted at [adilmohak1.pythonanywhere.com](https://adilmohak1.pythonanywhere.com/)
+## Créér par  [ndongomodounar@gmail.com](https://adilmohak1.pythonanywhere.com/)
 
 ### Access credentials:
-  - username: **admin**
-  - password: **secure@test**
+  - username: **user**
+  - password: **user**
 
-## Click here [if you need updates or additional features](https://adilmohak.github.io/dj-lms-starter/)
 
-Feature-rich learning management system. You may want to build a learning management system(AKA school management system) for a school organization or just for the sake of learning the tech stack and building your portfolio, either way, this project would be a good kickstart for you.
+Riche en fonctionalités de gestion des établissements d'enseignements
 
-Let's enhance the project by contributing! 👩‍💻👩‍💻
 
-![Screenshot from 2023-12-31 17-36-31](https://github.com/adilmohak/django-lms/assets/60693922/e7fb628a-6275-4160-ae0f-ab27099ab3ca)
 
 ## Current features
 
-- Dashboard: School demographics and analytics. Restricted to only admins
-- News And Events: All users can access this page
-- Admin manages students(Add, Update, Delete)
-- Admin manages lecturers(Add, Update, Delete)
-- Students can Add and Drop courses
-- Lecturers submit students' scores: _Attendance, Mid exam, Final exam, assignment_
-- The system calculates students' _Total, average, point, and grades automatically_
-- Grade comment for each student with a **pass**, **fail**, or **pass with a warning**
-- Assessment result page for students
-- Grade result page for students
-- Session/year and semester management
-- Assessments and grades will be grouped by semester
-- Upload video and documentation for each course
-- PDF generator for students' registration slip and grade result
-- Page access restriction
-- Storing of quiz results under each user
-- Question order randomization
-- Previous quiz scores can be viewed on the category page
-- Correct answers can be shown after each question or all at once at the end
-- Logged-in users can return to an incomplete quiz to finish it and non-logged-in users can complete a quiz if their session persists
-- The quiz can be limited to one attempt per user
-- Questions can be given a category
-- Success rate for each category can be monitored on a progress page
-- Explanation for each question result can be given
-- Pass marks can be set
-- Multiple choice question type
-- True/False question type
-- Essay question type
-- Custom message displayed for those that pass or fail a quiz
-- Custom permission (view_sittings) added, allowing users with that permission to view quiz results from users
-- A marking page which lists completed quizzes, can be filtered by quiz or user, and is used to mark essay questions
+- Tableau de bord : Démographie et analyses de l'école. Accès restreint uniquement aux administrateurs.
+- Actualités et événements : Tous les utilisateurs peuvent accéder à cette page.
+- L'administrateur gère les étudiants (Ajouter, Mettre à jour, Supprimer).
+- L'administrateur gère les enseignants (Ajouter, Mettre à jour, Supprimer).
+- Les étudiants peuvent ajouter et retirer des cours.
+- Les enseignants soumettent les notes des étudiants : Présence, Examen de mi-semestre, Examen final, Devoirs.
+- Le système calcule automatiquement le total, la moyenne, les points et les notes des étudiants.
+- Commentaire sur la note pour chaque étudiant avec une mention réussi, échoué ou réussi avec avertissement.
+- Page des résultats d'évaluation pour les étudiants.
+- Page des résultats de notes pour les étudiants.
+- Gestion des sessions/années et des semestres.
+- Les évaluations et les notes seront regroupées par semestre.
+- Téléchargement de vidéos et de documents pour chaque cours.
+- Générateur PDF pour le reçu d'inscription des étudiants et le relevé de notes.
+- Restriction d'accès aux pages.
+- Stockage des résultats de quiz sous chaque utilisateur.
+- Randomisation de l'ordre des questions.
+- Les scores des précédents quiz peuvent être consultés sur la page de catégorie.
+- Les bonnes réponses peuvent être affichées après chaque question ou toutes à la fin.
+- Les utilisateurs connectés peuvent reprendre un quiz incomplet pour le terminer, et les utilisateurs non connectés peuvent terminer un quiz si leur session est toujours active.
+- Le quiz peut être limité à une seule tentative par utilisateur.
+- Les questions peuvent être classées par catégorie.
+- Le taux de réussite pour chaque catégorie peut être suivi sur une page de progression.
+- Une explication peut être donnée pour chaque résultat de question.
+- Les notes de passage peuvent être définies.
+- Type de question à choix multiple.
+- Type de question vrai/faux.
+- Type de question dissertation.
+- Message personnalisé affiché pour ceux qui réussissent ou échouent à un quiz.
+- Permission personnalisée (view_sittings) ajoutée, permettant aux utilisateurs ayant cette permission de voir les résultats des quiz des utilisateurs.
+- Une page de notation qui liste les quiz terminés, peut être filtrée par quiz ou utilisateur, et est utilisée pour noter les questions à dissertation.
 
-# Quick note for future contributors
-
-If you would like to contribute, simply begin by implementing one from the list in the `TODO.md` file.
 
 # Requirements:
 
@@ -61,13 +55,13 @@ If you would like to contribute, simply begin by implementing one from the list 
 
 # Installation
 
-- Clone the repo with
+- Cloner le repositorie
 
 ```bash
-git clone https://github.com/adilmohak/django-lms.git
+git clone https://github.com/nourou-ndongo/learning management system.git
 ```
 
-- Create and activate a python virtual environment
+- Créé et activé un environnement viruel 
 
 ```bash
 pip install -r requirements.txt
@@ -75,7 +69,7 @@ pip install -r requirements.txt
 
 - Create `.env` file inside the root directory
 
-- Copy and paste everything in the `.env.example` file into the `.env` file. Don't forget to customize the variable values
+- copier et coller tout ce qui est dans le fichier `.env.example` dans le fichier `.env`. Et ne pas oublier de changer les variables personnelles
 
 ```bash
 python manage.py migrate
@@ -101,36 +95,7 @@ Start the celery worker
 celery -A config.celery worker -l INFO
 ```
 
-Last but not least, go to this address http://127.0.0.1:8000
 
-# References
 
-- Quiz part: https://github.com/tomwalker/django_quiz
-
-# Professional help
-
-[![Learn more](https://github.com/user-attachments/assets/0960dd62-820b-4b4c-b297-db9b61f3cbe5)](https://adilmohak.github.io/dj-lms-starter/)
-<br>
-
-# Connect with me
-
-<div>
-<a href="https://www.linkedin.com/in/adilmohak" target="_blank">
-<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-</a>
-<a href="https://github.com/adilmohak" target="_blank">
-<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
-</a>
-<a href="https://stackoverflow.com/users/12872688/adil-mohak" target="_blank">
-<img src=https://img.shields.io/badge/stackoverflow-%23F28032.svg?&style=for-the-badge&logo=stackoverflow&logoColor=white alt=stackoverflow style="margin-bottom: 5px;" />
-</a>
-<a href="https://www.facebook.com/adilmohak1" target="_blank">
-<img src=https://img.shields.io/badge/facebook-%232E87FB.svg?&style=for-the-badge&logo=facebook&logoColor=white alt=facebook style="margin-bottom: 5px;" />
-</a>
-</div>
-
-### Help me improve the project and upgrade my trusty old laptop
-
-<p><a href="https://www.buymeacoffee.com/adilmohak"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="36" width="160" alt="adilmohak" /></a></p><br><br>
 
 #### Show your support by ⭐️ this project!
